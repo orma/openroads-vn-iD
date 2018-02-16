@@ -63,6 +63,9 @@ iD.ui.EntityEditor = function(context) {
             .append('div')
             .attr('class', 'label');
 
+        $enter.append('div')
+            .attr('class', 'inspector-border raw-tag-editor inspector-inner');
+
         $body.select('.preset-list-button-wrap')
             .call(reference.button);
 
@@ -78,8 +81,6 @@ iD.ui.EntityEditor = function(context) {
         $enter.append('div')
             .attr('class', 'raw-member-editor inspector-inner');
         
-        $enter.append('div')
-            .attr('class', 'inspector-border raw-tag-editor inspector-inner');
 
         selection.selectAll('.preset-reset')
             .on('click', function() {
